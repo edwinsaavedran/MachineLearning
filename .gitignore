@@ -1,0 +1,27 @@
+# -----------------------------------------------------------------
+# ARCHIVO: .gitignore
+# -----------------------------------------------------------------
+
+# 1. Ignorar el Entorno Virtual (¡ESENCIAL!)
+# Nunca subas tu carpeta de entorno (venv) a Git.
+innovacion/
+venv/
+*.venv/
+
+# 2. Ignorar Archivos de Caché de Python
+__pycache__/
+*.pyc
+
+# 3. Ignorar archivos de modelo (.joblib)
+# Los modelos pueden ser muy pesados y son binarios.
+# Es mejor generarlos con el código que subirlos.
+*.joblib
+*.pkl
+
+# 4. Ignorar archivos de Sistema Operativo
+.DS_Store
+Thumbs.db
+
+# 5. Ignorar archivos de IDE (ej. VS Code, PyCharm)
+.vscode/
+.idea/

@@ -1,0 +1,24 @@
+# -----------------------------------------------------------------
+# ARCHIVO: requirements.txt
+# -----------------------------------------------------------------
+# 
+# Dependencias del proyecto "MachineLearning" (Curso 100000TD09)
+# 
+# Para instalar (después de activar tu venv):
+# pip install -r requirements.txt
+#
+
+# --- Núcleo de Ciencia de Datos (PyData) ---
+numpy           # Computación científica y manejo de arrays
+pandas          # Carga, manipulación y análisis de datos (DataFrames)
+scikit-learn    # ¡La biblioteca principal! Modelos, Pipelines, Métricas, Preprocesamiento
+joblib          # Para guardar y cargar modelos (aunque es dependencia de sklearn)
+
+# --- Visualización y Exploración ---
+matplotlib      # Biblioteca base para gráficos
+seaborn         # Gráficos estadísticos de alto nivel (para análisis)
+jupyterlab      # Entorno interactivo (Notebooks) para exploración y análisis
+
+# --- Modelos Avanzados (Semana 14+) ---
+xgboost         # Algoritmo de Boosting (muy popular y de alto rendimiento)
+lightgbm        # Algoritmo de Boosting (alternativa más rápida a XGBoost)
