@@ -58,7 +58,7 @@ Este dataset es ideal porque nos permite:
 
 ---
 
-## 🛠️ Stack Tecnológico
+## Stack Tecnológico
 
 Este proyecto utiliza el ecosistema PyData estándar para la ciencia de datos.
 
