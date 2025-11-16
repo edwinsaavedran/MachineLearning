@@ -85,6 +85,7 @@ Para ejecutar este proyecto, se recomienda un entorno virtual.
     python3 -m venv innovacion
     source innovacion/bin/activate
     ```
+    ## En caso sea Windows:  .\innovacion\Scripts\activate
 
 3.  Instala todas las dependencias:
     *(Asegúrate de mantener un archivo `requirements.txt` en esta carpeta raíz)*
