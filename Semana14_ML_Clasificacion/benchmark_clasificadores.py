@@ -28,7 +28,7 @@ from sklearn.svm import SVC # Support Vector Classifier
 print("--- Iniciando Benchmark de Clasificadores (Semana 14) ---")
 
 # --- 1. Cargar y Limpiar Datos (basado en EDA) ---
-DATA_PATH = '../data/telco_churn.csv'
+DATA_PATH = '../data/Telco-Customer-Churn.csv'
 df = pd.read_csv(DATA_PATH)
 
 # Convertir TotalCharges a numérico (como en el EDA)

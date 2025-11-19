@@ -2,7 +2,7 @@
 
 Este repositorio documenta el desarrollo práctico y técnico de los componentes de Inteligencia Artificial y Machine Learning del curso **Innovación y Transformación Digital (100000TD09)**.
 
-[cite_start]El proyecto sigue una progresión lógica, comenzando con los algoritmos fundamentales de la IA Clásica y evolucionando hacia *pipelines* de Machine Learning modernos y listos para la producción, aplicando las tecnologías clave para la transformación digital[cite: 32].
+El proyecto sigue una progresión lógica, comenzando con los algoritmos fundamentales de la IA Clásica y evolucionando hacia *pipelines* de Machine Learning modernos y listos para la producción, aplicando las tecnologías clave para la transformación digital.
 
 ## Objetivo del Proyecto
 
@@ -30,20 +30,20 @@ El proyecto está organizado en carpetas semanales que corresponden a los temas 
 Abordamos los temas del curso como un GDataScience, construyendo una solución integral.
 
 ### 1. Fundamentos de IA Clásica (Semanas 11-12)
-* [cite_start]**Temas:** Espacios de problemas, Razonamiento, Búsqueda[cite: 49].
-* [cite_start]**Implementación:** Se implementan algoritmos de búsqueda no informada (BFS, DFS) e informada (Hill Climbing, A\*) para resolver problemas de optimización de rutas[cite: 50]. Aquí, le *decimos* a la máquina cómo "razonar".
+* **Temas:** Espacios de problemas, Razonamiento, Búsqueda.
+* **Implementación:** Se implementan algoritmos de búsqueda no informada (BFS, DFS) e informada (Hill Climbing, A\*) para resolver problemas de optimización de rutas. Aquí, le *decimos* a la máquina cómo "razonar".
 
 ### 2. Aprendizaje Supervisado: Fundamentos (Semana 13)
-* [cite_start]**Temas:** Introducción a ML, Regresión Lineal, Regresión Logística[cite: 51].
+* **Temas:** Introducción a ML, Regresión Lineal, Regresión Logística.
 * **Implementación:** Damos el salto al ML. Aquí, la máquina *aprende* de los datos. Construimos modelos para predecir valores numéricos y categorías.
 * **Workflow Profesional:** Introducimos el flujo de trabajo estándar con **Pandas** (para ingesta de datos), **StandardScaler** (para preprocesamiento), **Pipelines** (para automatizar) y **Joblib** (para persistir modelos).
 
 ### 3. Aprendizaje Supervisado: Clasificadores Avanzados (Semana 14)
-* [cite_start]**Temas:** Máquinas de Soporte Vectorial (SVM), K-Vecinos Cercanos (KNN), Árboles de Decisión (DT) y Boosting[cite: 53].
+* **Temas:** Máquinas de Soporte Vectorial (SVM), K-Vecinos Cercanos (KNN), Árboles de Decisión (DT) y Boosting.
 * **Implementación:** Usando un dataset real (ver sección de Dataset), comparamos el rendimiento de estos modelos avanzados para resolver un problema de negocio (predecir el abandono de clientes).
 
 ### 4. Aprendizaje No Supervisado: Clustering (Semanas 15-17)
-* [cite_start]**Temas:** Introducción al Clustering, K-Means, Mean-Shift, DBSCAN, GMM, etc.[cite: 54, 55, 56].
+* **Temas:** Introducción al Clustering, K-Means, Mean-Shift, DBSCAN, GMM, etc..
 * **Implementación:** Cambiamos de objetivo. Usando el mismo dataset, aplicamos técnicas de clustering para realizar **análisis de comportamiento** y encontrar segmentos de clientes ocultos (ej. "Clientes leales", "Clientes en riesgo").
 
 ---

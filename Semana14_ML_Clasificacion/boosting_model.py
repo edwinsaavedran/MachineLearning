@@ -22,7 +22,7 @@ from xgboost import XGBClassifier # ¡Nuevo! El modelo de Boosting
 print("--- Iniciando Modelo de Boosting (Semana 14) ---")
 
 # --- 1. Cargar y Limpiar Datos (basado en EDA) ---
-DATA_PATH = '../data/telco_churn.csv'
+DATA_PATH = '../data/Telco-Customer-Churn.csv'
 df = pd.read_csv(DATA_PATH)
 
 df['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors='coerce')
