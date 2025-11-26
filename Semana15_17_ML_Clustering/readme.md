@@ -1,28 +1,37 @@
 # Semana 15-17: Aprendizaje No Supervisado (Clustering)
 
-En este módulo cambiamos el enfoque de predecir etiquetas (Supervisado) a descubrir patrones ocultos en los datos (No Supervisado)
+Este módulo contiene la suite completa de algoritmos de segmentación exigidos por el sílabo.
 
-El objetivo es realizar una **Segmentación de Clientes** utilizando el dataset de Telco Churn, agrupando a los usuarios según su comportamiento de pago y antigüedad.
+## Scripts Disponibles
 
-## Archivos
+### 1. `clustering_kmeans.py` (Semana 15)
+* **Algoritmo:** K-Means.
+* **Uso:** Segmentación estándar.
+* **Clave:** Usa el "Método del Codo" para decidir cuántos grupos existen.
+* **Salida:** Perfilado de clientes (ej. "Nuevos de Bajo Valor").
 
-### 1. `clustering_kmeans.py` (Semana 15) 
-Implementa el algoritmo **K-Means**, la técnica de clustering más popular.
+### 2. `clustering_dbscan.py` (Semana 16)
+* **Algoritmo:** DBSCAN (Density-Based Spatial Clustering of Applications with Noise).
+* **Uso:** Detección de anomalías y grupos con formas irregulares.
+* **Clave:** No requiere definir el número de clusters. Identifica **Ruido** (Cluster -1), útil para detectar fraude o datos erróneos.
 
-**Flujo de Trabajo:**
-1.  **Selección de Features:** Utilizamos `tenure`, `MonthlyCharges` y `TotalCharges`.
-2.  **Escalado:** Aplicamos `StandardScaler` (obligatorio para K-Means debido a la distancia Euclideana).
-3.  **Método del Codo:** Genera el gráfico `kmeans_elbow_plot.png` probando K=1 a 10, ayudándonos a decidir el número óptimo de grupos.
-4.  **Modelado:** Aplica K-Means (con K=4 por defecto).
-5.  **Interpretación:** Calcula el promedio de cada cluster para darle un "nombre" de negocio (ej. "Cliente Nuevo de Bajo Valor").
-6.  **Visualización:** Genera `kmeans_clusters_visual.png` para ver la separación de grupos en 2D.
+### 3. `clustering_hierarchical.py` (Semana 17)
+* **Algoritmo:** Clustering Jerárquico Aglomerativo.
+* **Uso:** Análisis visual de la estructura de los datos.
+* **Clave:** Genera un **Dendrograma** para visualizar cómo se agrupan los clientes desde el nivel individual hasta formar grandes grupos.
 
 ---
 
-## Resultados Esperados
+## Ejecución
 
-Al ejecutar el script, descubrirás 4 segmentos claros de clientes que suelen alinearse con:
-* **Cluster A:** Nuevos / Bajo Gasto.
-* **Cluster B:** Nuevos / Alto Gasto (Riesgo alto de churn).
-* **Cluster C:** Antiguos / Bajo Gasto (Leales económicos).
-* **Cluster D:** Antiguos / Alto Gasto (VIPs).
+Puedes ejecutar cada script secuencialmente para comparar los resultados:
+
+```bash
+# 1. Encontrar segmentos generales
+python clustering_kmeans.py
+
+# 2. Detectar anomalías/ruido
+python clustering_dbscan.py
+
+# 3. Ver la jerarquía visual
+python clustering_hierarchical.py
